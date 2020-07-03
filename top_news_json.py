@@ -11,7 +11,7 @@ def read_files():
 
         for items in data['rss']['channel']['items']:
             original_text += ' ' + items['description']
-        return original_text
+        return original_text.lower()
 
 
 def count_word(original_text):
